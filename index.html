@@ -179,9 +179,12 @@
     </section>
 
     <section class="image-text-section image-text-section__image-full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" /> <!-- Dipositivos menores, ex. celular usaram esta imagem -->
+            <img src="./dist/images/dispositivos/fundo_rei_leao_celular.png" alt=""> <!-- Outros dispositivos vao usar esta imagem -->
+        </picture>
         <div class="image-text-section__text_container image-text-section__image-full-width__text_container">
-            <h2 class="title">Assista do seu jeito</h2>
+            <h2 class="title">Baixe filmes e séries</h2>
             <p class="text--big">
                 Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de
                 titulos 4K não para de crescer. Além disso, para a felicidade de todos, é possivel assistir em até 4
